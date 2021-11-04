@@ -2,6 +2,14 @@
 
 /*********** Global Styles********/
 
+*,
+::after,
+::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body, html {
 		background-color: #E3E3E3;
 }
@@ -344,4 +352,14 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: -100px;
     margin-bottom: 40px;
 	background-image: url(../../assets/images/profile.jpg);
+}
+/****** Fixing conflicting foundation.css ******/
+
+ol,
+ul {
+	margin: 0 !important;
+}
+
+ul .no-margin {
+	margin: 0 !important;
 }
